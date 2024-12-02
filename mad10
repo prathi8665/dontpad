@@ -1,0 +1,57 @@
+/*
+
+Create a directory named mypack in your project's source folder.
+
+Create a Java File inside the mypack Package:
+
+Inside the mypack directory, create a Java file named 
+
+MyPackageClass.java.
+
+MyPackageClass.java (Inside mypack package):
+
+*/
+
+// Class inside the mypack package
+
+package mypack; // Package declaration
+
+public class MyPackageClass {
+
+ public void display() {
+
+ System.out.println("Hello from MyPackageClass in mypack 
+
+package!");
+
+ }
+
+}
+
+/*
+
+Create a Java file named MainClass.java in a different package (let's 
+
+say mainpack).
+
+MainClass.java (Inside mainpack package):
+
+*/
+
+package mainpack; // Package declaration
+
+import mypack.MyPackageClass; // Importing the class from mypack 
+
+package
+
+public class MainClass {
+
+ public static void main(String[] args) {
+
+ MyPackageClass myPackageObj = new MyPackageClass();
+
+ myPackageObj.display(); // Calling the display method from 
+
+MyPackageClass
+
+ }
